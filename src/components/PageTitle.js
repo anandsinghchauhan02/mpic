@@ -1,10 +1,4 @@
 import React from "react";
-import {
-    Row, Col, Container,
-
-} from "reactstrap";
-import { Icon } from '../components';
-import { Link } from 'gatsby';
 
 
 const PageTitle = () => {

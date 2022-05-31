@@ -8,12 +8,17 @@ import { Icon } from '../components';
 import { Link } from 'gatsby';
 
 const getActive = (pathName) => {
-    if(pathName == '/' && window.location.pathname == '/') {
-        return 'active';
-    } 
-    else if( pathName !== '/' && window.location.pathname.includes(pathName)) {
-        return 'active';
+    if (typeof window !== 'undefined') {
+
+
+        if (pathName == '/' && window.location.pathname == '/') {
+            return 'active';
+        }
+        else if (pathName !== '/' && window.location.pathname.includes(pathName)) {
+            return 'active';
+        }
     }
+    return '';
 }
 
 const Header = () => {
@@ -33,7 +38,7 @@ const Header = () => {
                 <Col md="9">
                     <Row className="justify-content-end">
                         {
-                            intro.map(({ text, link, icon, title, iconType='fas' }, index) => {
+                            intro.map(({ text, link, icon, title, iconType = 'fas' }, index) => {
                                 return (
                                     <Col xs="12" md="3" key={index}>
                                         <Row>
@@ -63,7 +68,7 @@ const Header = () => {
             <Row className="pb-md-2">
 
                 <Navbar
-                    
+
                     expand="md"
                     sticky="top"
                     className="px-0"
@@ -90,7 +95,7 @@ const Header = () => {
                                             <NavLink href={link}>
                                                 {text}
                                             </NavLink>
-                                            <div className={`link-bottom ${ getActive(link) }`}></div>
+                                            <div className={`link-bottom ${getActive(link)}`}></div>
                                         </NavItem>
                                     )
                                 })

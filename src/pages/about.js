@@ -2,7 +2,7 @@ import * as React from "react"
 
 // import { graphql, useStaticQuery } from 'gatsby';
 // import { Row, Col, Button, Container } from 'reactstrap';
-import { Layout } from '../components';
+import Layout from '../components/Layout';
 
 
 // function useHeaderItems() {

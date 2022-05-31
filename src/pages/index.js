@@ -2,7 +2,8 @@ import * as React from "react"
 
 // import { graphql, useStaticQuery } from 'gatsby';
 // import { Row, Col, Button, Container } from 'reactstrap';
-import { Layout, ImagePanel } from '../components';
+import ImagePanel from '../components/ImagePanel';
+import Layout from '../components/Layout';
 
 
 // function useHeaderItems() {

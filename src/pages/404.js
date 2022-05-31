@@ -1,19 +1,15 @@
 import * as React from "react"
 
-
-import { Layout } from '../components';
-
-
 // markup
 const NotFoundPage = () => {
 
  
 
   return (
-    <Layout>
+    <div>
       oops !  
       <h2>This is a 404</h2>
-    </Layout>
+    </div>
   )
 }
 

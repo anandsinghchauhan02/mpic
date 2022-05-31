@@ -10,7 +10,7 @@ library.add(fab, faCheckSquare, faCoffee, faHome, faPhone, faMap, faFacebook, fa
 
 const Icon = ({children, type='fas', classNames=''}) => {
     return (
-        <FontAwesomeIcon className={classNames} icon={[type, children]} />
+        <FontAwesomeIcon rotation={0} spinPulse={false} spin={false} className={classNames} icon={[type, children]} />
     )
 }
 

@@ -1,5 +1,8 @@
 import React from "react"
-import { Header, PageTitle, Slider } from '../components';
+import Header from "./Header";
+import PageTitle from "./PageTitle";
+import Slider from "./Slider";
+
 import { Container } from "reactstrap";
 import './style.css';
 

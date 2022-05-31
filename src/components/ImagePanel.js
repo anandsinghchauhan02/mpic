@@ -1,10 +1,9 @@
 import React from "react";
 import {
-    Row, Col, Container,
+    Row, Col,
 
 } from "reactstrap";
-import { Icon } from '../components';
-import { Link } from 'gatsby';
+
 
 
 const ImagePanel = ({ image, children, imageStyle = {}, imageLeft = false, ...rest}) => {
