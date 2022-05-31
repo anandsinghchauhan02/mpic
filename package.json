@@ -1,0 +1,47 @@
+{
+  "name": "school-template-this-is-a-best-school",
+  "version": "1.0.0",
+  "private": true,
+  "description": "school-template-this-is-a-best-school",
+  "author": "Satyam",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@vanilla-extract/babel-plugin": "^1.1.6",
+    "@vanilla-extract/css": "^1.7.0",
+    "@vanilla-extract/webpack-plugin": "^2.1.10",
+    "bootstrap": "^5.1.3",
+    "gatsby": "^4.15.1",
+    "gatsby-plugin-fontawesome-css": "^1.2.0",
+    "gatsby-plugin-google-analytics": "^4.15.0",
+    "gatsby-plugin-image": "^2.15.0",
+    "gatsby-plugin-manifest": "^4.15.0",
+    "gatsby-plugin-mdx": "^3.15.0",
+    "gatsby-plugin-react-helmet": "^5.15.0",
+    "gatsby-plugin-sharp": "^4.15.0",
+    "gatsby-plugin-sitemap": "^5.15.0",
+    "gatsby-plugin-vanilla-extract": "^2.0.1",
+    "gatsby-source-filesystem": "^4.15.0",
+    "gatsby-transformer-sharp": "^4.15.0",
+    "gatsby-transformer-yaml": "^4.15.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "reactstrap": "^9.0.3"
+  }
+}

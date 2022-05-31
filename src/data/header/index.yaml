@@ -1,0 +1,56 @@
+nav:
+  - text: Home
+    link: /
+
+  - text: About
+    link: /about
+
+  - text: Campus
+    link: /campus
+
+  - text: Admission
+    link: /Admission
+
+  - text: Contact
+    link: /contact/
+
+intro:
+  - title: Contact
+    link: "tel:+4733378901"
+    icon: phone
+    text: "+4733378901"
+    iconType: "fas"
+  
+  - title: Message
+    link: https://wa.me/1234556789 
+    icon: whatsapp
+    text: "Send Hi, to us"
+    iconType: "fab"
+
+  - title: Address
+    link: https://goo.gl/maps/msVRHrnyRRbFuzar8
+    icon: map
+    text: Noida, India
+    iconType: "fas"
+    
+
+social:
+  - text: Facebook
+    link: facebook.com
+    icon: "facebook"
+    iconType: "fab"
+
+  - text: Twitter
+    link: twitter.com
+    icon: twitter
+    iconType: "fab"
+
+  - text: Instagram
+    link: instagram.com
+    icon: "instagram"
+    iconType: "fab"
+
+logo:
+  text: My school
+  link: /
+  image: /images/logo.png
