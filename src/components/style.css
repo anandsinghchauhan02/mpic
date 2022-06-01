@@ -91,3 +91,7 @@
     height: 40vh;
 }
 
+.right-gola-container {
+    position: relative;
+    overflow: hidden;
+}

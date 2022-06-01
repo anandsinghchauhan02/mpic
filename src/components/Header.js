@@ -41,21 +41,25 @@ const Header = () => {
                             intro.map(({ text, link, icon, title, iconType = 'fas' }, index) => {
                                 return (
                                     <Col xs="12" md="3" key={index}>
-                                        <Row>
-                                            <Col md="auto">
-                                                <Icon classNames="text-warning" type={iconType}>
-                                                    {icon}
-                                                </Icon>
+
+                                        <Link to={link} className="link-secondary text-decoration-none">
+                                            <Row>
+                                                <Col md="auto">
+                                                    <Icon classNames="text-warning" type={iconType}>
+                                                        {icon}
+                                                    </Icon>
 
 
-                                            </Col>
-                                            <Col className="pl-0">
-                                                <h5>{title}</h5>
-                                                <Link to={link} className="link-secondary text-decoration-none">
+                                                </Col>
+                                                <Col className="pl-0">
+                                                    <h5>{title}</h5>
+
                                                     {text}
-                                                </Link>
-                                            </Col>
-                                        </Row>
+
+                                                </Col>
+
+                                            </Row>
+                                        </Link>
                                     </Col>
                                 )
                             })
