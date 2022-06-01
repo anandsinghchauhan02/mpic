@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -45,5 +46,8 @@
     "react-infinite-scroll-component": "^6.1.0",
     "react-masonry-component": "^6.3.0",
     "reactstrap": "^9.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

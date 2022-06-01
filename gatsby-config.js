@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/school-static",
   siteMetadata: {
     title: `School Template | This is a best school`,
     siteUrl: `https://www.yourdomain.tld`
