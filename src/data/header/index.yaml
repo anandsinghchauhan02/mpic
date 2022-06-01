@@ -9,10 +9,7 @@ nav:
     link: /campus
 
   - text: Admission
-    link: /Admission
-
-  - text: Contact
-    link: /contact/
+    link: /admission
 
 intro:
   - title: Contact

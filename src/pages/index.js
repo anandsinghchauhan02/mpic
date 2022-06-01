@@ -1,10 +1,11 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 
 // import { graphql, useStaticQuery } from 'gatsby';
 import { CardColumns, Card, Col, Row } from 'reactstrap';
 import ImagePanel from '../components/ImagePanel';
 import Layout from '../components/Layout';
-import { BlockTitle, CardColumn } from "../components";
+import { BlockTitle, CardColumn, Pros } from "../components";
+import useHomeItems from '../hooks/home';
 
 const teachers = [
   {
@@ -55,9 +56,11 @@ const teachers = [
 // markup
 const IndexPage = () => {
 
-  // const data = useHeaderItems();
-
+  const { pros } = useHomeItems();
   // console.log(data)
+
+
+
 
 
   return (
@@ -67,11 +70,18 @@ const IndexPage = () => {
         <div className="right-gola"></div>
       </div> */}
 
-      <Layout>
+      <Layout hasSlider={true}>
 
         <div className="py-md-5 py-sm-3">
           <div className="py-md-4 py-sm-2">
             <BlockTitle title={'Welcome To My Nice school'} subTitle={'The school aspires to keep up a situation in which understudies may outperform expectancies.'} />
+
+            <Row className="justify-content-center" >
+              <Col className="py-md-4 py-2" md="9" sm="12" >
+                <Pros list={pros} />
+
+              </Col>
+            </Row>
             <CardColumn />
 
           </div>

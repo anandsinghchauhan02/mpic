@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 import { Container } from "reactstrap";
 import './style.css';
 
-const Layout = ({ children, pageTitle, hasSlider = true }) => {
+const Layout = ({ children, pageTitle, hasSlider = false }) => {
     return (
         <main>
             <Container>

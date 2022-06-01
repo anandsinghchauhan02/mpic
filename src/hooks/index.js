@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 
 export const useHeaderItems = () => {
-    const { allHeaderYaml: { edges } } = useStaticQuery(graphql`
+  const { allHeaderYaml: { edges } } = useStaticQuery(graphql`
       query HEADER_QUERY {
         allHeaderYaml {
             edges {
@@ -35,8 +35,7 @@ export const useHeaderItems = () => {
           }
       }
     `);
-    const items = edges[0]?.node;
+  const items = edges[0]?.node;
 
-    return items
+  return items
 }
-

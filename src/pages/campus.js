@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from '../components/Layout';
 
-const AboutPage = () => {
+const CampusPage = () => {
   return (
-    <Layout pageTitle="About Us">
+    <Layout pageTitle="Our Campus">
       <h1>Hi</h1>
     </Layout>
   )
 }
 
-export default AboutPage
+export default CampusPage

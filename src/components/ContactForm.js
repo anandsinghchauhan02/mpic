@@ -1,18 +1,19 @@
 import React from "react";
 import { Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import Icon from "./Icon";
 
 const ContactForm = () => {
 
 	return (
-		<div className="contact-form bg-warning py-5 px-5">
+		<div className="contact-form py-5 px-5">
 
 			<Row className="">
 				<Col sm="12" md="5" className="px-5">
 					<h2 className="display-3">
 						Contact us
 					</h2>
-					<Button className="btn-dark mt-5">
-						Connect
+					<Button className="btn-dark mt-3">
+						Connect us <Icon>arrow-right</Icon>
 					</Button>
 				</Col>
 				<Col sm="12" md="7" className="px-5">
@@ -22,13 +23,11 @@ const ContactForm = () => {
 
 							<Col md={6}>
 								<FormGroup>
-									<Label for="examplePassword">
-										Name
-									</Label>
+
 									<Input
 										id="examplePassword"
 										name="password"
-										placeholder="password placeholder"
+										placeholder="Name"
 										type="text"
 									/>
 								</FormGroup>
@@ -36,13 +35,11 @@ const ContactForm = () => {
 
 							<Col md={6}>
 								<FormGroup>
-									<Label for="exampleEmail">
-										Email
-									</Label>
+									
 									<Input
 										id="exampleEmail"
 										name="email"
-										placeholder="with a placeholder"
+										placeholder="Email"
 										type="email"
 									/>
 								</FormGroup>
@@ -50,15 +47,13 @@ const ContactForm = () => {
 
 						</Row>
 						<FormGroup>
-							<Label for="exampleAddress">
-								Message
-							</Label>
+							
 							<Input
 								type="textarea"
 
 								id="exampleAddress"
 								name="address"
-								placeholder="Hi, "
+								placeholder="Message "
 							/>
 						</FormGroup>
 
