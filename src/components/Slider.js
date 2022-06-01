@@ -13,7 +13,7 @@ const Slider = () => {
 
     return (
 
-        <Row className="custom-slides">
+        <div className="custom-slides">
 
 
             <UncontrolledCarousel
@@ -39,7 +39,7 @@ const Slider = () => {
                     }
                 ]}
             />
-        </Row>
+        </div>
     )
 }
 

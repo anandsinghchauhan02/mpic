@@ -1,10 +1,38 @@
 import * as React from "react"
 
 // import { graphql, useStaticQuery } from 'gatsby';
-// import { Row, Col, Button, Container } from 'reactstrap';
+import { CardColumns, Card, Col, Row } from 'reactstrap';
 import ImagePanel from '../components/ImagePanel';
 import Layout from '../components/Layout';
+import { BlockTitle, CardColumn } from "../components";
 
+const teachers = [
+  {
+    name: 'Nice Name',
+    subject: 'English teacher',
+    avatar: '/images/t1.jpg'
+  },
+  {
+    name: 'Nice Name',
+    subject: 'Math teacher',
+    avatar: '/images/t2.jpg'
+  },
+  {
+    name: 'Nice Name',
+    subject: 'Science teacher',
+    avatar: '/images/t3.jpg'
+  },
+  {
+    name: 'Nice Name',
+    subject: 'SST teacher',
+    avatar: '/images/t4.jpg'
+  },
+  {
+    name: 'Nice Name',
+    subject: 'Hindi teacher',
+    avatar: '/images/t5.jpg'
+  },
+]
 
 // function useHeaderItems() {
 // const data = useStaticQuery(graphql`
@@ -41,20 +69,16 @@ const IndexPage = () => {
 
       <Layout>
 
-        <ImagePanel image="/images/home_1.png" imageLeft={false} >
-          <div className="py-5 mt-5">
-            <h2>
-              WELCOME TO MY NICE SCHOOL.
-            </h2>
-            <p>
-              The school aspires to keep up a situation in which understudies may outperform expectancies in academic exercises, demonstrate dominant learning, and develop scholarly limitations and capacities that will prepare them for public administration. We provide understudies with comprehensive and in-depth learning experiences in order for them to value the wonders of the world and never stop seeking more, while also acknowledging, tolerating, and consuming more up to date and better as their lives progress.
-            </p>
+        <div className="py-md-5 py-sm-3">
+          <div className="py-md-4 py-sm-2">
+            <BlockTitle title={'Welcome To My Nice school'} subTitle={'The school aspires to keep up a situation in which understudies may outperform expectancies.'} />
+            <CardColumn />
+
           </div>
 
+        </div>
 
-        </ImagePanel>
-
-        <ImagePanel image="/images/principal.jpg" imageLeft={true} imageStyle={{ width: '50%' }}>
+        <ImagePanel image="/images/principal.jpg" imageLeft={true} imageStyle={{ width: '50%', borderRadius: '20px' }}>
           <div className="py-5 mt-5">
             <h2>
               Message from Principal.
@@ -69,6 +93,48 @@ const IndexPage = () => {
           </div>
 
         </ImagePanel>
+
+        <div className="py-md-5 py-sm-3">
+          <div className="py-md-4 py-sm-2">
+
+
+            <BlockTitle title="The Awesome Gurus" subTitle="The school aspires to keep up a situation in which understudies may outperform expectancies in academic exercises." />
+
+            <div className="p-3">
+
+            </div>
+            <Row>
+
+              {
+                teachers.map(({ name, subject, avatar }, index) => {
+                  return (
+                    <Col>
+
+                      <div className="teacher-image">
+                        <img src={avatar} title="" />
+                        <div className="p-3">
+                          <h5>{name}</h5>
+                          <div className="link-primary">
+                            {subject}
+                          </div>
+                        </div>
+                      </div>
+                    </Col>
+
+                  )
+                })
+              }
+
+
+            </Row>
+
+          </div>
+
+        </div>
+
+
+
+
       </Layout>
     </>
   )

@@ -29,7 +29,7 @@ const Header = () => {
 
         <>
 
-            <Row className="pt-5 pb-3 border-bottom">
+            <Row className="pt-5 pb-2 border-bottom">
                 <Col md="3">
                     <Link to={logo.link} >
                         <img height={'56px'} src={logo.image} />
@@ -40,7 +40,7 @@ const Header = () => {
                         {
                             intro.map(({ text, link, icon, title, iconType = 'fas' }, index) => {
                                 return (
-                                    <Col xs="12" md="3" key={index}>
+                                    <Col className="py-md-2 intro-link" xs="12" md="3" key={index}>
 
                                         <Link to={link} className="link-secondary text-decoration-none">
                                             <Row>

@@ -2,11 +2,13 @@ import React from "react"
 import Header from "./Header";
 import PageTitle from "./PageTitle";
 import Slider from "./Slider";
+import Footer from "./Footer";
+import ContactForm from "./ContactForm";
 
 import { Container } from "reactstrap";
 import './style.css';
 
-const Layout = ({ children, pageTitle, hasSlider=true }) => {
+const Layout = ({ children, pageTitle, hasSlider = true }) => {
     return (
         <main>
             <Container>
@@ -17,14 +19,29 @@ const Layout = ({ children, pageTitle, hasSlider=true }) => {
             }
 
             {
-                hasSlider && (<Slider />)    
+                hasSlider && (<Slider />)
             }
 
             <Container>
                 {children}
             </Container>
+            <Container>
+            <ContactForm />
+
+            </Container>
+            <Container fluid className="bg-light-blue py-5">
+                <Container className="pt-md-5">
+                    <div className="p-5">
+                        <div className="py-5"></div>
+                    </div>
+                    
+                    <Footer />
+                </Container>
+
+            </Container>
 
         </main>
+
 
     )
 }
