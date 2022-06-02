@@ -30,6 +30,7 @@ export const useHeaderItems = () => {
                     link   
                     image
                 }
+                copyright
               }
             }
           }

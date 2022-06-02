@@ -23,7 +23,7 @@ const getActive = (pathName) => {
 }
 
 const Footer = () => {
-	const { logo, intro, nav, social } = useHeaderItems();
+	const { logo, intro, nav, social, copyright } = useHeaderItems();
 
 
 	return (
@@ -41,7 +41,7 @@ const Footer = () => {
 				<Col sm="12" md="4">
 					<Row className="justify-content-end">
 						{
-							intro.map(({ text, link, icon, title, iconType = 'fas' }, index) => {
+							intro.map(({ text, link = "", icon, title, iconType = 'fas' }, index) => {
 								return (
 									<Col className=" intro-link" md="12" key={index}>
 
@@ -93,7 +93,7 @@ const Footer = () => {
 			<Row className="border-top pt-4">
 				<Col>
 					<div className="text-start">
-						© Copyrights 2022 School All rights reserved
+						{copyright}
 					</div>
 				</Col>
 				<Col>

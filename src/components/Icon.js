@@ -8,9 +8,9 @@ import { faCheckSquare, faCoffee, faHome, faPhone, faMap, faArrowRight } from "@
 library.add(fab, faCheckSquare, faCoffee, faHome, faPhone, faMap, faFacebook, faTwitter, faWhatsapp, faInstagramSquare, faArrowRight);
 
 
-const Icon = ({children, type='fas', classNames=''}) => {
+const Icon = ({ children, type = 'fas', classNames = '' }) => {
     return (
-        <FontAwesomeIcon rotation={0} spinPulse={false} spin={false} className={classNames} icon={[type, children]} />
+        <FontAwesomeIcon rotation={0} spin={false} className={classNames} icon={[type, children]} />
     )
 }
 

@@ -7,9 +7,34 @@ const useHomeItems = () => {
       allHomeYaml {
         edges {
           node {
+            principal {
+              avatar
+              name
+              text
+              title
+            }
             pros {
-              description
-              image
+              list {
+                description
+                image
+                title
+              }
+              subTitle
+              title
+            }
+            slides {
+              altText
+              caption
+              key
+              src
+            }
+            teachers {
+              subTitle
+              list {
+                name
+                avatar
+                subject
+              }
               title
             }
           }

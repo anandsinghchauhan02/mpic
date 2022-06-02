@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 import { Container } from "reactstrap";
 import './style.css';
 
-const Layout = ({ children, pageTitle, hasSlider = false }) => {
+const Layout = ({ children, pageTitle, hasSlider = false, slides = [] }) => {
     return (
         <main>
             <Container>
@@ -19,14 +19,14 @@ const Layout = ({ children, pageTitle, hasSlider = false }) => {
             }
 
             {
-                hasSlider && (<Slider />)
+                hasSlider && (<Slider list={slides} />)
             }
 
             <Container>
                 {children}
             </Container>
             <Container>
-            <ContactForm />
+                <ContactForm />
 
             </Container>
             <Container fluid className="bg-light-blue py-5">
@@ -34,7 +34,7 @@ const Layout = ({ children, pageTitle, hasSlider = false }) => {
                     <div className="p-5">
                         <div className="py-5"></div>
                     </div>
-                    
+
                     <Footer />
                 </Container>
 

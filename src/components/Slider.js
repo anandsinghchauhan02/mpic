@@ -1,47 +1,32 @@
 import { withPrefix } from "gatsby";
 import React from "react";
 import {
-    Row, UncontrolledCarousel, Carousel, CarouselCaption, CarouselControl,
-    CarouselIndicators, CarouselItem
+	Row, UncontrolledCarousel, Carousel, CarouselCaption, CarouselControl,
+	CarouselIndicators, CarouselItem
 
 } from "reactstrap";
 
 
 
-const Slider = () => {
-    // const { logo, intro, nav, social } = useSlideItems();
+const Slider = ({ list = [] }) => {
+
+	const slides = list.map((item) => {
+		return {
+			...item,
+			src: withPrefix(item.src)
+		}
+	})
+	return (
+
+		<div className="custom-slides">
 
 
-    return (
+			<UncontrolledCarousel
 
-        <div className="custom-slides">
-
-
-            <UncontrolledCarousel
-
-                items={[
-                    {
-                        altText: 'Slide 1',
-                        caption: 'Slide 1',
-                        key: 1,
-                        src: withPrefix('/images/s1.jpg')
-                    },
-                    {
-                        altText: 'Slide 2',
-                        caption: 'Slide 2',
-                        key: 2,
-                        src: withPrefix('/images/s2.jpg')
-                    },
-                    {
-                        altText: 'Slide 3',
-                        caption: 'Slide 3',
-                        key: 3,
-                        src: withPrefix('/images/s3.jpg')
-                    }
-                ]}
-            />
-        </div>
-    )
+				items={slides}
+			/>
+		</div>
+	)
 }
 
 export default Slider;

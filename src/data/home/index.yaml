@@ -1,16 +1,61 @@
 pros:
-  - title: "Awesome Facilities"
-    description: "to make a type specimen book. "
-    image: "/images/t1.jpg"
+  title: "Welcome To My Nice school"
+  subTitle: "The school aspires to keep up a situation in which understudies may outperform expectancies."
+  list:
+    - title: "Awesome Facilities"
+      description: "to make a type specimen book. "
+      image: "/images/t1.jpg"
 
-  - title: "Good teachers"
-    description: "but also the leap into electronic."
-    image: "/images/t1.jpg"
+    - title: "Good teachers"
+      description: "but also the leap into electronic."
+      image: "/images/t1.jpg"
 
-  - title: "Learning by play"
-    description: "randomised words which don't loo "
-    image: "/images/t1.jpg"
+    - title: "Learning by play"
+      description: "randomised words which don't loo "
+      image: "/images/t1.jpg"
 
-  - title: "Online classes"
-    description: "Many desktop publishing packages"
-    image: "/images/t1.jpg"
+    - title: "Online classes"
+      description: "Many desktop publishing packages"
+      image: "/images/t1.jpg"
+
+teachers:
+  title: "Awesome Gurus"
+  subTitle: "The school aspires to keep up a situation in which understudies may outperform expectancies in academic exercises."
+  list:
+    - name: Nice Name
+      subject: English teacher
+      avatar: "/images/t1.jpg"
+    - name: Nice Name
+      subject: Math teacher
+      avatar: "/images/t2.jpg"
+    - name: Nice Name
+      subject: Science teacher
+      avatar: "/images/t3.jpg"
+    - name: Nice Name
+      subject: SST teacher
+      avatar: "/images/t4.jpg"
+    - name: Nice Name
+      subject: Hindi teacher
+      avatar: "/images/t5.jpg"
+
+principal:
+  title: "Message from Principal"
+  text: "Hi, There how are you"
+  avatar: "/images/principal.jpg"
+  name: "My name is"
+
+slides:
+  - altText: Slide 1
+    caption: Slide 1
+    key: 1
+    src: "/images/s1.jpg"
+
+  - altText: Slide 2
+    caption: Slide 2
+    key: 2
+    src: "/images/s2.jpg"
+
+  - altText: Slide 3
+    caption: Slide 3
+    key: 3
+    src: "/images/s3.jpg"
