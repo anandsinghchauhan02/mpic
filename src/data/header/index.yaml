@@ -2,53 +2,53 @@ nav:
   - text: Home
     link: /
 
-  - text: About
-    link: /about
+  # - text: About
+  #   link: /about
 
-  - text: Campus
-    link: /campus
+  # - text: Campus
+  #   link: /campus
 
-  - text: Admission
-    link: /admission
+  # - text: Admission
+  #   link: /admission
 
 intro:
   - title: Contact
-    link: "tel:+4733378901"
+    link: "tel:8874374646"
     icon: phone
-    text: "+4733378901"
+    text: "8874374646"
     iconType: "fas"
 
   - title: Message
-    link: https://wa.me/1234556789
+    link: https://wa.me/8874374646
     icon: whatsapp
-    text: "Send Hi, to us"
+    text: "Chat with us"
     iconType: "fab"
 
   - title: Address
     link: https://goo.gl/maps/msVRHrnyRRbFuzar8
     icon: map
-    text: Noida, India
+    text: "Bhaupur, Jaunpur U.P. 222136"
     iconType: "fas"
 
 social:
   - text: Facebook
-    link: facebook.com
+    link: "https://www.facebook.com/"
     icon: "facebook"
     iconType: "fab"
 
   - text: Twitter
-    link: twitter.com
+    link: "https://www.facebook.com/"
     icon: twitter
     iconType: "fab"
 
   - text: Instagram
-    link: instagram.com
+    link: "https://www.facebook.com/"
     icon: "instagram"
     iconType: "fab"
 
 logo:
-  text: My school
+  text: Mathura Prasad Intermediate College
   link: /
   image: /images/logo.png
 
-copyright: "© Copyrights 2022 School All rights reserved"
+copyright: "© Copyrights 2022 Mathura Prasad Intermediate College All rights reserved"

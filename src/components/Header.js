@@ -22,7 +22,7 @@ const getActive = (pathName) => {
 }
 
 const Header = () => {
-	const { logo, intro, nav, social } = useHeaderItems();
+	const { logo, intro, nav = [], social } = useHeaderItems();
 
 
 	return (
@@ -32,7 +32,7 @@ const Header = () => {
 			<Row className="pt-5 pb-2 border-bottom">
 				<Col md="3">
 					<Link to={logo.link} >
-						<img height={'56px'} src={withPrefix(logo.image)} />
+						<img height={'95px'} src={withPrefix(logo.image)} />
 					</Link>
 				</Col>
 				<Col md="9">
@@ -69,7 +69,7 @@ const Header = () => {
 
 
 			</Row>
-			<Row className="pb-md-2">
+			{(nav.length > 1) && (<Row className="pb-md-2">
 
 				<Navbar
 
@@ -126,7 +126,7 @@ const Header = () => {
 
 					</Collapse>
 				</Navbar>
-			</Row>
+			</Row>)}
 		</>
 
 	)

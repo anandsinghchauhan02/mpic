@@ -35,7 +35,7 @@ const Footer = () => {
 					<Link to={logo.link} >
 						<img height={'56px'} src={withPrefix(logo.image)} />
 					</Link>
-					<p>this is site description about how we build it and deploye it at the times.</p>
+					<p>We are always dedicated towards the betterment of the college to provide quality educations.</p>
 				</Col>
 
 				<Col sm="12" md="4">
@@ -91,12 +91,12 @@ const Footer = () => {
 			</Row>
 
 			<Row className="border-top pt-4">
-				<Col>
+				<Col xs="12" md="6">
 					<div className="text-start">
 						{copyright}
 					</div>
 				</Col>
-				<Col>
+				<Col xs="12" md="6">
 					<Nav className="justify-content-end">
 
 						{

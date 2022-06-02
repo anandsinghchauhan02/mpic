@@ -9,13 +9,13 @@ import { withPrefix } from "gatsby"
 
 
 const testImages = [
-    '/images/k1.jpg',
-    '/images/k3.jpg',
-    '/images/k4.jpg',
-
-    '/images/k2.jpg',
-    '/images/k7.jpg',
-    '/images/k6.jpg',
+    '/images/k1.jpeg',
+    '/images/k2.jpeg',
+    '/images/k3.jpeg',
+    '/images/k4.jpeg',
+    '/images/k5.jpeg',
+    '/images/k6.jpeg',
+    '/images/k7.jpeg',
 ]
 
 const fakeApi = (page = 1, limit = 10) => {
@@ -27,7 +27,7 @@ const fakeApi = (page = 1, limit = 10) => {
 // Masory Options
 const masonryOptions = {
     fitWidth: true,
-    columnWidth: 220,
+    columnWidth: 320,
     gutter: 30,
     itemSelector: ".photo-item"
 };

@@ -1,8 +1,7 @@
 module.exports = {
-  pathPrefix: "/school-static",
   siteMetadata: {
-    title: `School Template | This is a best school`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Mathura Prasad Inter College | Bhaupur Jaunpur U.P.`,
+    siteUrl: `https://mpicbhaupur.com`
   },
   plugins: [`gatsby-plugin-fontawesome-css`, "gatsby-plugin-vanilla-extract", {
     resolve: 'gatsby-plugin-google-analytics',

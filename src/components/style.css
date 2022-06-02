@@ -101,7 +101,7 @@
 }
 
 .custom-slides .carousel-inner {
-  height: 40vh;
+  height: 50vh;
 }
 
 .right-gola-container {
@@ -123,7 +123,7 @@
 
 .photo-item {
   display: flex;
-  width: 220px;
+  width: 320px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
   margin: 20px 0;
   border-radius: 20px;
@@ -223,6 +223,8 @@
   border-radius: 20px;
   width: 100%;
   height: auto;
+  max-height: 200px;
+  min-height: 200px;
 }
 
 .contact-form {

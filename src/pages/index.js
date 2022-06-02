@@ -25,35 +25,48 @@ const IndexPage = () => {
           <div className="py-md-4 py-sm-2">
             <BlockTitle title={pros.title} subTitle={pros.subTitle} />
 
-            <Row className="justify-content-center" >
+            {/* <Row className="justify-content-center" >
               <Col className="py-md-4 py-2" md="9" sm="12" >
                 <Pros list={pros.list} />
 
               </Col>
-            </Row>
+            </Row> */}
             <CardColumn />
 
           </div>
 
         </div>
 
-        <ImagePanel image={principal.avatar} imageLeft={true} imageStyle={{ width: '50%', borderRadius: '20px' }}>
-          <div className="py-5 mt-5">
-            <h2>
-              {principal.title}
-            </h2>
+        <div className="py-md-5 py-sm-3">
+
+          <ImagePanel image={principal.avatar} imageLeft={true} imageStyle={{ width: '70%', borderRadius: '20px' }}>
+            <div className="">
+              <h2>
+                {principal.title}
+              </h2>
 
 
-            <p>
-              {principal.text}
-              <span>
-                - {principal.name}
-              </span>
-            </p>
+              <p>
+                {principal.text}
+              </p>
+              <div className="">
+                <strong>
+                  - {principal.name}
 
-          </div>
+                </strong>
+                <br />
+                <small className="text-secondary">
+                  Principal, Mathura Prasad Intermediate College
 
-        </ImagePanel>
+                </small>
+
+
+              </div>
+
+            </div>
+
+          </ImagePanel>
+        </div>
 
         <div className="py-md-5 py-sm-3">
           <div className="py-md-4 py-sm-2">
@@ -69,13 +82,15 @@ const IndexPage = () => {
               {
                 teachers.list.map(({ name, subject, avatar }, index) => {
                   return (
-                    <Col key={index}>
+                    <Col xs="6" md="auto" key={index}>
                       <div className="teacher-image">
                         <img src={withPrefix(avatar)} title="" />
                         <div className="p-3">
-                          <h5>{name}</h5>
+                          <span>{name}</span>
                           <div className="link-primary">
-                            {subject}
+                            <small>
+                              {subject}
+                            </small>
                           </div>
                         </div>
                       </div>
