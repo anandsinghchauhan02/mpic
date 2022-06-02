@@ -3,6 +3,7 @@ import React from "react";
 
 import Masony from "react-masonry-component";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { withPrefix } from "gatsby"
 
 
 
@@ -103,7 +104,7 @@ const CardColumn = ({ images = testImages }) => {
                 loader={<h4>Loading...</h4>}
                 endMessage={
                     <p style={{ textAlign: "center" }}>
-                        
+
                     </p>
                 }
                 refreshFunction={refresh}
@@ -127,7 +128,7 @@ const CardColumn = ({ images = testImages }) => {
                         imagesData.map((url, index) => (
                             <li className={`photo-item`} key={index}>
                                 <img
-                                    src={url}
+                                    src={withPrefix(url)}
                                     alt=""
                                     onClick={() => {
                                         setImageModal({
@@ -167,7 +168,7 @@ const CardColumn = ({ images = testImages }) => {
                         <img
                             className="modal-content"
                             id="img01"
-                            src={imageModal.modalSrc}
+                            src={withPrefix(imageModal.modalSrc)}
                             alt=""
                         />
                     </div>

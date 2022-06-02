@@ -5,7 +5,8 @@ import {
 } from "reactstrap";
 import { useHeaderItems } from '../hooks';
 import { Icon } from '.';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
+
 
 const getActive = (pathName) => {
 	if (typeof window !== 'undefined') {
@@ -32,7 +33,7 @@ const Footer = () => {
 			<Row className="pb-5">
 				<Col sm="12" md="4">
 					<Link to={logo.link} >
-						<img height={'56px'} src={logo.image} />
+						<img height={'56px'} src={withPrefix(logo.image)} />
 					</Link>
 					<p>this is site description about how we build it and deploye it at the times.</p>
 				</Col>
@@ -92,7 +93,7 @@ const Footer = () => {
 			<Row className="border-top pt-4">
 				<Col>
 					<div className="text-start">
-						© Copyrights 2020 Shelly All rights reserved
+						© Copyrights 2022 School All rights reserved
 					</div>
 				</Col>
 				<Col>

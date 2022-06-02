@@ -1,3 +1,4 @@
+import { withPrefix } from "gatsby";
 import React from "react";
 import { Row, Col, Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
@@ -15,7 +16,7 @@ const Pros = ({ list = [] }) => {
 									<div className="pb-3">
 										<img
 											alt="Card image cap"
-											src={image}
+											src={withPrefix(image)}
 
 											width="40px"
 											height="40px"

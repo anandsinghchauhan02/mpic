@@ -17,9 +17,9 @@ intro:
     icon: phone
     text: "+4733378901"
     iconType: "fas"
-  
+
   - title: Message
-    link: https://wa.me/1234556789 
+    link: https://wa.me/1234556789
     icon: whatsapp
     text: "Send Hi, to us"
     iconType: "fab"
@@ -29,7 +29,6 @@ intro:
     icon: map
     text: Noida, India
     iconType: "fas"
-    
 
 social:
   - text: Facebook

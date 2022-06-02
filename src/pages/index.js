@@ -6,6 +6,7 @@ import ImagePanel from '../components/ImagePanel';
 import Layout from '../components/Layout';
 import { BlockTitle, CardColumn, Pros } from "../components";
 import useHomeItems from '../hooks/home';
+import { withPrefix } from "gatsby";
 
 const teachers = [
   {
@@ -121,7 +122,7 @@ const IndexPage = () => {
                     <Col>
 
                       <div className="teacher-image">
-                        <img src={avatar} title="" />
+                        <img src={withPrefix(avatar)} title="" />
                         <div className="p-3">
                           <h5>{name}</h5>
                           <div className="link-primary">

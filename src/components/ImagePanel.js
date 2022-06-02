@@ -1,3 +1,4 @@
+import { withPrefix } from "gatsby";
 import React from "react";
 import {
     Row, Col,
@@ -6,8 +7,8 @@ import {
 
 
 
-const ImagePanel = ({ image, children, imageStyle = {}, imageLeft = false, ...rest}) => {
-    
+const ImagePanel = ({ image, children, imageStyle = {}, imageLeft = false, ...rest }) => {
+
 
 
     return (
@@ -24,7 +25,7 @@ const ImagePanel = ({ image, children, imageStyle = {}, imageLeft = false, ...re
                 )
             }
             <Col>
-                <img src={image} alt="title" width={'100%'} height={'auto'} style={imageStyle} />
+                <img src={withPrefix(image)} alt="title" width={'100%'} height={'auto'} style={imageStyle} />
             </Col>
             {
                 imageLeft && (
