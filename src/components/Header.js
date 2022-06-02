@@ -32,7 +32,7 @@ const Header = () => {
 			<Row className="pt-5 pb-2 border-bottom">
 				<Col md="3">
 					<Link to={logo.link} >
-						<img height={'56px'} src={withPrefix(logo.image)} />
+						<img height={'95px'} src={withPrefix(logo.image)} />
 					</Link>
 				</Col>
 				<Col md="9">

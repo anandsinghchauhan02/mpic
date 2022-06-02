@@ -25,12 +25,12 @@ const IndexPage = () => {
           <div className="py-md-4 py-sm-2">
             <BlockTitle title={pros.title} subTitle={pros.subTitle} />
 
-            <Row className="justify-content-center" >
+            {/* <Row className="justify-content-center" >
               <Col className="py-md-4 py-2" md="9" sm="12" >
                 <Pros list={pros.list} />
 
               </Col>
-            </Row>
+            </Row> */}
             <CardColumn />
 
           </div>
@@ -56,7 +56,7 @@ const IndexPage = () => {
                 </strong>
                 <br />
                 <small className="text-secondary">
-
+                  Principal, Mathura Prasad Intermediate College
 
                 </small>
 
@@ -82,7 +82,7 @@ const IndexPage = () => {
               {
                 teachers.list.map(({ name, subject, avatar }, index) => {
                   return (
-                    <Col key={index}>
+                    <Col xs="6" md="auto" key={index}>
                       <div className="teacher-image">
                         <img src={withPrefix(avatar)} title="" />
                         <div className="p-3">
