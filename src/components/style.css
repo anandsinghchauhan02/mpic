@@ -251,3 +251,13 @@
   font-weight: 700;
   font-size: 2.5rem;
 }
+
+.logo-img {
+  height: 95px;
+}
+
+@media (max-width: 1000px) {
+  .logo-img {
+    width: 100%;
+  }
+}

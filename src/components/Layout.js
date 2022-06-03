@@ -26,14 +26,14 @@ const Layout = ({ children, pageTitle, hasSlider = false, slides = [] }) => {
                 {children}
             </Container>
             <Container>
-                {/* <ContactForm /> */}
+                <ContactForm />
 
             </Container>
             <Container fluid className="bg-light-blue py-5">
                 <Container className="pt-md-5">
-                    {/* <div className="p-5">
+                    <div className="p-5">
                         <div className="py-5"></div>
-                    </div> */}
+                    </div>
 
                     <Footer />
                 </Container>

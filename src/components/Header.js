@@ -30,17 +30,17 @@ const Header = () => {
 		<>
 
 			<Row className="pt-5 pb-2 border-bottom">
-				<Col md="3">
+				<Col md="5">
 					<Link to={logo.link} >
-						<img height={'95px'} src={withPrefix(logo.image)} />
+						<img className="logo-img" src={withPrefix(logo.image)} />
 					</Link>
 				</Col>
-				<Col md="9">
+				<Col md="7">
 					<Row className="justify-content-end">
 						{
 							intro.map(({ text, link, icon, title, iconType = 'fas' }, index) => {
 								return (
-									<Col className="py-md-2 intro-link" xs="auto" md="3" key={index}>
+									<Col className="py-md-2 intro-link" xs="auto" md="4" lg="3" sm="4" key={index}>
 
 										<Link to={link} className="link-secondary text-decoration-none">
 											<Row>
