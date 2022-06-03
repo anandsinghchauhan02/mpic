@@ -26,23 +26,23 @@ intro:
 
   - title: Address
     link: https://goo.gl/maps/msVRHrnyRRbFuzar8
-    icon: map
+    icon: location-dot
     text: Noida, India
     iconType: "fas"
 
 social:
   - text: Facebook
-    link: facebook.com
+    link: "https://www.facebook.com/"
     icon: "facebook"
     iconType: "fab"
 
   - text: Twitter
-    link: twitter.com
+    link: "https://www.facebook.com/"
     icon: twitter
     iconType: "fab"
 
   - text: Instagram
-    link: instagram.com
+    link: "https://www.facebook.com/"
     icon: "instagram"
     iconType: "fab"
 

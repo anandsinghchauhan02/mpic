@@ -37,23 +37,36 @@ const IndexPage = () => {
 
         </div>
 
-        <ImagePanel image={principal.avatar} imageLeft={true} imageStyle={{ width: '50%', borderRadius: '20px' }}>
-          <div className="py-5 mt-5">
-            <h2>
-              {principal.title}
-            </h2>
+        <div className="py-md-5 py-3">
+
+          <ImagePanel image={principal.avatar} imageLeft={true} imageStyle={{ width: '70%', borderRadius: '20px' }}>
+            <div className="">
+              <h2>
+                {principal.title}
+              </h2>
 
 
-            <p>
-              {principal.text}
-              <span>
-                - {principal.name}
-              </span>
-            </p>
+              <p>
+                {principal.text}
+              </p>
+              <div className="">
+                <strong>
+                  - {principal.name}
 
-          </div>
+                </strong>
+                <br />
+                <small className="text-secondary">
 
-        </ImagePanel>
+
+                </small>
+
+
+              </div>
+
+            </div>
+
+          </ImagePanel>
+        </div>
 
         <div className="py-md-5 py-sm-3">
           <div className="py-md-4 py-sm-2">
@@ -73,9 +86,11 @@ const IndexPage = () => {
                       <div className="teacher-image">
                         <img src={withPrefix(avatar)} title="" />
                         <div className="p-3">
-                          <h5>{name}</h5>
+                          <span>{name}</span>
                           <div className="link-primary">
-                            {subject}
+                            <small>
+                              {subject}
+                            </small>
                           </div>
                         </div>
                       </div>

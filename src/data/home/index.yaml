@@ -1,5 +1,5 @@
 pros:
-  title: "Welcome To My Nice school"
+  title: "Welcome"
   subTitle: "The school aspires to keep up a situation in which understudies may outperform expectancies."
   list:
     - title: "Awesome Facilities"
@@ -46,16 +46,16 @@ principal:
 
 slides:
   - altText: Slide 1
-    caption: Slide 1
+    caption: ""
     key: 1
     src: "/images/s1.jpg"
 
   - altText: Slide 2
-    caption: Slide 2
+    caption: ""
     key: 2
     src: "/images/s2.jpg"
 
   - altText: Slide 3
-    caption: Slide 3
+    caption: ""
     key: 3
     src: "/images/s3.jpg"

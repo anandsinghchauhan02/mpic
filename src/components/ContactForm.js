@@ -5,10 +5,10 @@ import Icon from "./Icon";
 const ContactForm = () => {
 
 	return (
-		<div className="contact-form py-5 px-5">
+		<div className="contact-form py-md-5 px-5 py-3">
 
 			<Row className="">
-				<Col sm="12" md="5" className="px-5">
+				<Col sm="12" md="5" className="px-md-5 py-3">
 					<h2 className="display-3">
 						Contact us
 					</h2>
@@ -16,7 +16,7 @@ const ContactForm = () => {
 						Connect us <Icon>arrow-right</Icon>
 					</Button>
 				</Col>
-				<Col sm="12" md="7" className="px-5">
+				<Col sm="12" md="7" className="px-md-5 py-3">
 
 					<Form>
 						<Row>
@@ -35,7 +35,7 @@ const ContactForm = () => {
 
 							<Col md={6}>
 								<FormGroup>
-									
+
 									<Input
 										id="exampleEmail"
 										name="email"
@@ -47,7 +47,7 @@ const ContactForm = () => {
 
 						</Row>
 						<FormGroup>
-							
+
 							<Input
 								type="textarea"
 

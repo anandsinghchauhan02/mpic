@@ -10,12 +10,12 @@ import { withPrefix } from "gatsby"
 
 const testImages = [
     '/images/k1.jpg',
+    '/images/k2.jpg',
     '/images/k3.jpg',
     '/images/k4.jpg',
-
-    '/images/k2.jpg',
-    '/images/k7.jpg',
+    '/images/k5.jpg',
     '/images/k6.jpg',
+    '/images/k7.jpg',
 ]
 
 const fakeApi = (page = 1, limit = 10) => {

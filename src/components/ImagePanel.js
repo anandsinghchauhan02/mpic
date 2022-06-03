@@ -18,18 +18,18 @@ const ImagePanel = ({ image, children, imageStyle = {}, imageLeft = false, ...re
 
             {
                 !imageLeft && (
-                    <Col className="py-md-4 px-0">
+                    <Col xs="12" md="6" className="py-4">
                         {children}
                     </Col>
 
                 )
             }
-            <Col>
+            <Col xs="12" md="6">
                 <img src={withPrefix(image)} alt="title" width={'100%'} height={'auto'} style={imageStyle} />
             </Col>
             {
                 imageLeft && (
-                    <Col className="py-md-4 px-0">
+                    <Col xs="12" md="6" className="py-4">
                         {children}
                     </Col>
 

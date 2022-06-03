@@ -22,7 +22,7 @@ const getActive = (pathName) => {
 }
 
 const Header = () => {
-	const { logo, intro, nav, social } = useHeaderItems();
+	const { logo, intro, nav = [], social } = useHeaderItems();
 
 
 	return (
@@ -40,7 +40,7 @@ const Header = () => {
 						{
 							intro.map(({ text, link, icon, title, iconType = 'fas' }, index) => {
 								return (
-									<Col className="py-md-2 intro-link" xs="12" md="3" key={index}>
+									<Col className="py-md-2 intro-link" xs="auto" md="3" key={index}>
 
 										<Link to={link} className="link-secondary text-decoration-none">
 											<Row>
@@ -51,7 +51,7 @@ const Header = () => {
 
 
 												</Col>
-												<Col className="pl-0">
+												<Col className="pl-0 d-none d-sm-block">
 													<h5>{title}</h5>
 
 													{text}
@@ -69,7 +69,7 @@ const Header = () => {
 
 
 			</Row>
-			<Row className="pb-md-2">
+			{(nav.length > 1) && (<Row className="pb-md-2">
 
 				<Navbar
 
@@ -126,7 +126,7 @@ const Header = () => {
 
 					</Collapse>
 				</Navbar>
-			</Row>
+			</Row>)}
 		</>
 
 	)

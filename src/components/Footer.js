@@ -35,7 +35,7 @@ const Footer = () => {
 					<Link to={logo.link} >
 						<img height={'56px'} src={withPrefix(logo.image)} />
 					</Link>
-					<p>this is site description about how we build it and deploye it at the times.</p>
+					<p>We are always dedicated towards the betterment of the college to provide quality educations.</p>
 				</Col>
 
 				<Col sm="12" md="4">
@@ -43,18 +43,18 @@ const Footer = () => {
 						{
 							intro.map(({ text, link = "", icon, title, iconType = 'fas' }, index) => {
 								return (
-									<Col className=" intro-link" md="12" key={index}>
+									<Col className=" intro-link" md="12" xs="auto" key={index}>
 
 										<Link to={link} className="link-dark text-decoration-none">
 											<Row>
-												<Col md="auto">
+												<Col md="auto" xs="12">
 													<Icon classNames="text-warning" type={iconType}>
 														{icon}
 													</Icon>
 
 
 												</Col>
-												<Col className="pl-0">
+												<Col className="pl-0 d-none d-sm-block">
 													<span>{title}</span>
 													<div className="text-secondary">
 														{text}
@@ -91,12 +91,12 @@ const Footer = () => {
 			</Row>
 
 			<Row className="border-top pt-4">
-				<Col>
+				<Col xs="12" md="6">
 					<div className="text-start">
 						{copyright}
 					</div>
 				</Col>
-				<Col>
+				<Col xs="12" md="6">
 					<Nav className="justify-content-end">
 
 						{

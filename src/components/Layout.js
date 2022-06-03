@@ -32,7 +32,7 @@ const Layout = ({ children, pageTitle, hasSlider = false, slides = [] }) => {
             <Container fluid className="bg-light-blue py-5">
                 <Container className="pt-md-5">
                     <div className="p-5">
-                        <div className="py-5"></div>
+                        <div className="py-md-3 py-5"></div>
                     </div>
 
                     <Footer />
