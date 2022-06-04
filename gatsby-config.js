@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Mathura Prasad Inter College | Bhaupur Jaunpur U.P.`,
-    siteUrl: `https://mpicbhaupur.com`
+    siteUrl: `https://mpicbhaupur.com`,
+    description: "Mathura prasad inter college,  Mathura, prasad, inter, college, intermediate, bahupur, jaunpur, u.p., uttar pradesh, 222136, school, site, satic, government school, government college, best college, app62.tech, web development, app development, app, 62, tech"
   },
   plugins: [`gatsby-plugin-fontawesome-css`, "gatsby-plugin-vanilla-extract", {
     resolve: 'gatsby-plugin-google-analytics',

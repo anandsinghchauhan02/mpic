@@ -12,7 +12,7 @@ const ContactForm = () => {
 		formEl.current.onsubmit = () => {
 			setTimeout(() => {
 				setGreet('Thank you ! we will get in touch soon.')
-			}, 100);
+			}, 1000);
 		}
 	}, []);
 
@@ -28,6 +28,13 @@ const ContactForm = () => {
 						</h4>
 					</Col>
 				</Row>
+				<iframe
+					height={0}
+					src="#"
+					id="no-target"
+					name="no-target"
+					style={{ visibility: 'hidden' }}
+				></iframe>
 			</div>
 		)
 	}

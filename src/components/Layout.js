@@ -7,43 +7,47 @@ import ContactForm from "./ContactForm";
 
 import { Container } from "reactstrap";
 import './style.css';
+import Meta from "./Meta";
 
 const Layout = ({ children, pageTitle, hasSlider = false, slides = [] }) => {
-    return (
-        <main>
-            <Container>
-                <Header />
-            </Container>
-            {
-                !!pageTitle && (<PageTitle title={pageTitle} />)
-            }
+	return (
+		<>
+			<Meta />
+			<main>
+				<Container>
+					<Header />
+				</Container>
+				{
+					!!pageTitle && (<PageTitle title={pageTitle} />)
+				}
 
-            {
-                hasSlider && (<Slider list={slides} />)
-            }
+				{
+					hasSlider && (<Slider list={slides} />)
+				}
 
-            <Container>
-                {children}
-            </Container>
-            <Container>
-                <ContactForm />
+				<Container>
+					{children}
+				</Container>
+				<Container>
+					<ContactForm />
 
-            </Container>
-            <Container fluid className="bg-light-blue py-5">
-                <Container className="pt-md-5">
-                    <div className="p-5">
-                        <div className="py-5"></div>
-                    </div>
+				</Container>
+				<Container fluid className="bg-light-blue py-5">
+					<Container className="pt-md-5">
+						<div className="p-5">
+							<div className="py-5"></div>
+						</div>
 
-                    <Footer />
-                </Container>
+						<Footer />
+					</Container>
 
-            </Container>
+				</Container>
 
-        </main>
+			</main>
+		</>
 
 
-    )
+	)
 }
 
 
