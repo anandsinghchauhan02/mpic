@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkschool_template_this_is_a_best_school=self.webpackChunkschool_template_this_is_a_best_school||[]).push([[682],{5465:function(e,t,s){s.r(t);var l=s(7294),_=s(2224);t.default=function(){return l.createElement(_.Z,{pageTitle:"About Us"},l.createElement("h1",null,"Hi"))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-91c6077705af35933594.js.map
